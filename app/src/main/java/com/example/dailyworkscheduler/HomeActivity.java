@@ -92,7 +92,9 @@ public class HomeActivity extends AppCompatActivity
         if(id==R.id.nav_home){
             dataInserted();
         } else if (id == R.id.nav_gallery) {
-           // getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new LoginActivity()).commit();
+            Intent myIntent = new Intent(this, LoginActivity.class);
+            this.startActivity(myIntent);
+            //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new LoginActivity()).commit();
 
         } else if (id == R.id.nav_slideshow) {
 
